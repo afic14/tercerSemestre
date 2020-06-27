@@ -1,0 +1,1 @@
+La app sirve para ingresar los datos de una factura del alquiler de un cuarto de hotel, aunque para ello se necesitan llenar unos formularios primero.
