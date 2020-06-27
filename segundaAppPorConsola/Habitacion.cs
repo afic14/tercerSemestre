@@ -6,8 +6,8 @@ namespace programaPorConsola
 {
     class Habitacion
     {
-        public string Id { get; set; }
-        public string Color { get; set; }
+        public int Id { get; set; }
+        public string Camas { get; set; }
         public string Numero { get; set; }
         public string Precio { get; set; }
         public Factura factura { get; set; }
@@ -23,9 +23,9 @@ namespace programaPorConsola
         {
             return "Eliminado";
         }
-        public string Pintar(string color)
+        public string Limpiar()
         {
-            return $"La habitación {Numero} fue pintada de color {color}";
+            return "Se procederá a limpiar la habitación";
         }
     }
 }

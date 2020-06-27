@@ -13,9 +13,9 @@ namespace programaPorConsola
         public Habitacion cuarto { get; set; }
         public Recepcionista recepcionista { get; set; }
         public Cliente cliente { get; set; }
-        public string Crear(string nombreCliente, string nombreRecepcionista, string habitacion)
+        public string Crear()
         {
-            return "Se ha creado una nueva factura";
+            return $"Se ha creado una nueva factura a nombre de {cliente.Nombre}, por el recepcionista {recepcionista.Nombre} en la habitacion {cuarto.Numero}";
         }
         public string Eliminar()
         {
