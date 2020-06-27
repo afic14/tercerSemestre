@@ -10,6 +10,7 @@ namespace programaPorConsola
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public string Sueldo { get; set; }
+        public Factura factura { get; set; }
         public string Agregar()
         {
             return $"Se agregó a {Nombre} como un/a nuevo/a trabajador/a";

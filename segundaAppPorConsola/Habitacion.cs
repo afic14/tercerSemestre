@@ -10,6 +10,7 @@ namespace programaPorConsola
         public string Color { get; set; }
         public string Numero { get; set; }
         public string Precio { get; set; }
+        public Factura factura { get; set; }
         public string Agregar()
         {
             return $"Se agregó la habitación {Numero}";
