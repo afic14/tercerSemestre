@@ -8,11 +8,22 @@ namespace facturaHotel
     {
         public string Celular { get; set; }
         public Factura Factura { get; set; }
-        public Persona AgregarPersona(string cedula, string nombre, string apellido)
+        public Cliente()
         {
-            var nuevoCliente = new Persona(cedula, nombre, apellido);
+
+        }
+        public Cliente(string cedula, string nombre, string apellido, string celular)
+        {
+            Cedula = cedula;
+            Nombre = nombre;
+            Apellido = apellido;
+            Celular = celular;
+            
+        }
+        public Cliente AgregarPersona(string cedula, string nombre, string apellido, string celular)
+        {
+            var nuevoCliente = new Cliente(cedula, nombre, apellido, celular);
             return nuevoCliente;
         }
-
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace facturaHotel
 {
@@ -9,13 +10,24 @@ namespace facturaHotel
         public Cliente Cliente { get; set; }
         public Recepcionista Recepcionista { get; set; }
         public Habitación Habitación { get; set; }
-        public string CrearFactura()
+        public Factura()
         {
-            return "Factura creada";
+
+        }
+        public Factura(string codigo, DateTime fecha)
+        {
+            Código = codigo;
+            Fecha = fecha;
+        }
+        public Factura CrearFactura(string codigo, DateTime fecha)
+        {
+            var newFactura = new Factura(codigo, fecha);
+            return newFactura;
         }
         public string ConsultarFacturas()
         {
             return "Listado de facturas";
         }
+
     }
 }

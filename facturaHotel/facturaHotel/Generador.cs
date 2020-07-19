@@ -5,7 +5,7 @@ using System.Text;
 
 namespace facturaHotel
 {
-    public abstract class Generador
+    public abstract class Generador : Object
     {
         private int Id;
         public int generar()
