@@ -4,7 +4,7 @@ using System.Text;
 
 namespace facturaHotelActualizada
 {
-    class Cliente : Persona
+    public class Cliente : Persona
     {
         public Factura Factura { get; set; }
         public Cliente()
