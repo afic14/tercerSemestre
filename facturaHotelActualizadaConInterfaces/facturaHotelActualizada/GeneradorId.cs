@@ -7,7 +7,7 @@ namespace facturaHotelActualizada
 {
     public abstract class GeneradorId : Object
     {
-        protected int Id { get; set; } 
+        protected int Id { get; set; } = new Random().Next();
         private int Generar()
         {
             return Id = new Random().Next();

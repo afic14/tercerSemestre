@@ -20,5 +20,6 @@ namespace facturaHotelActualizada
         {
             return "Estoy pintando la construccion";
         }
+       
     }
 }

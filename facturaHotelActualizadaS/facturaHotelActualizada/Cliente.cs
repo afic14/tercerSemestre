@@ -18,5 +18,9 @@ namespace facturaHotelActualizada
             Apellido = apellido;
             Celular = celular;
         }
+        public override string Saludar()
+        {
+            return "Buenas tardes, me ayuda con una habitación";
+        }
     }
 }

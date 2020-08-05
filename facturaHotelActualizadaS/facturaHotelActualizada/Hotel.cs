@@ -23,6 +23,7 @@ namespace facturaHotelActualizada
         }
         public string Pintar(string color)
         {
+            base.Pintar();
             return $"Estoy pintando el hotel {this.Nombre} de color {color}";
         }
         public static string Barrer()
